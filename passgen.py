@@ -45,6 +45,11 @@ def main():
     password = generate_password(length)
     
     print("Password Generated is :", password)
+    accept = input("Do you accept this password? (yes/no): ")
+    if accept.lower() == "yes":
+        print("Password accepted.")
+    else:
+        print("Password reset.")
 
 if __name__ == "__main__":
     main()
